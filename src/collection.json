@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "move-schematic": {
+      "description": "A schematic that tries to move files from one place to another.",
+      "factory": "./move-schematic/index#moveSchematic"
+    }
+  }
+}
