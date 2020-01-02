@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "A blank schematics",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "build": "tsc -p tsconfig.json && cp src/collection.json build/collection.json && cp src/move-schematic/schema* build/move-schematic/",
+    "test": "npm run build && jasmine build/**/*_spec.js"
   },
   "keywords": [
     "schematics"
